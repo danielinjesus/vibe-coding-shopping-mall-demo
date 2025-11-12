@@ -1,0 +1,141 @@
+.register-page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f5f5f5;
+  padding: 20px;
+}
+
+.register-container {
+  width: 100%;
+  max-width: 460px;
+  background-color: white;
+  border-radius: 8px;
+  padding: 50px 40px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.register-logo {
+  color: #03c75a;
+  font-size: 48px;
+  font-weight: bold;
+  text-align: center;
+  margin: 0 0 10px 0;
+  letter-spacing: -1px;
+}
+
+.register-title {
+  font-size: 24px;
+  font-weight: 600;
+  text-align: center;
+  color: #333;
+  margin: 0 0 40px 0;
+}
+
+.register-form {
+  margin-bottom: 20px;
+}
+
+.error-message {
+  color: #ff0000;
+  font-size: 13px;
+  padding: 10px;
+  background-color: #fff5f5;
+  border: 1px solid #ffd6d6;
+  border-radius: 4px;
+  margin-bottom: 15px;
+}
+
+.input-group {
+  margin-bottom: 20px;
+}
+
+.input-label {
+  display: block;
+  font-size: 14px;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 8px;
+}
+
+.register-input,
+.register-select {
+  width: 100%;
+  padding: 15px;
+  border: 1px solid #dadada;
+  border-radius: 4px;
+  font-size: 15px;
+  box-sizing: border-box;
+  transition: border-color 0.2s;
+}
+
+.register-input:focus,
+.register-select:focus {
+  outline: none;
+  border-color: #03c75a;
+}
+
+.register-input::placeholder {
+  color: #aaa;
+}
+
+.register-select {
+  cursor: pointer;
+  background-color: white;
+}
+
+.register-button {
+  width: 100%;
+  padding: 16px;
+  background-color: #03c75a;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
+
+.register-button:hover {
+  background-color: #02a04a;
+}
+
+.register-button:active {
+  background-color: #028a3f;
+}
+
+.login-link {
+  text-align: center;
+  font-size: 14px;
+  color: #666;
+  margin-top: 20px;
+}
+
+.login-link a {
+  color: #03c75a;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.login-link a:hover {
+  text-decoration: underline;
+}
+
+/* 반응형 */
+@media (max-width: 480px) {
+  .register-container {
+    padding: 40px 30px;
+  }
+
+  .register-logo {
+    font-size: 36px;
+  }
+
+  .register-title {
+    font-size: 20px;
+  }
+}
